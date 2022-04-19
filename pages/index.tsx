@@ -1,4 +1,5 @@
 import type { GetServerSideProps, NextPage } from 'next'
+import Head from 'next/head'
 import Link from 'next/link'
 import gekiyaba from '../modules/soshina/gekiyaba'
 import { Scene } from '../modules/soshina/types'
@@ -37,6 +38,10 @@ export const getServerSideProps: GetServerSideProps<Props, {}, { seed?: string }
 const Home: NextPage<Props> = ({ seed, scenes, nextSeed }) => {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>粗品激ヤバYouTuberジェネレータ―</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" lang='ja' />
+      </Head>
       <div className={styles.main}>
         <h1>粗品激ヤバYouTuberジェネレーター</h1>
         <div>
