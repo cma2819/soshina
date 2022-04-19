@@ -1,4 +1,4 @@
-import { arrayToSeed, seedToArray } from './seeds'
+import { arrayToSeed, randomSeed, seedToArray } from './seeds'
 
 test('make seed from array', () => {
   const seed = arrayToSeed(
@@ -20,4 +20,6 @@ test('seed length', () => {
   expect(
     arrayToSeed(new Uint16Array(arrayLength)).length
   ).toBe(arrayLength * 2);
+
+  expect(randomSeed(10).length).toBe(18);
 });

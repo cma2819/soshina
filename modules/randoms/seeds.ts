@@ -7,7 +7,7 @@ export const seedToArray = (seed: string): Uint16Array => {
 }
 
 export const randomSeed = (length: number): string => {
-  const randoms = Array.from(new Array(length - 1), (_, k) => Math.floor(Math.random() * (k + 1)))
+  const randoms = Array.from(new Array(length - 1), (_, k) => Math.floor(Math.random() * (k + 2)))
 
   return arrayToSeed(Uint16Array.from(randoms));
 }
