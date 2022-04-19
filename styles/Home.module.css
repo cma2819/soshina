@@ -1,0 +1,53 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  align-items: center;
+}
+
+.control a {
+  background-color: #bcbcff;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.control a:hover,
+.control a:focus,
+.control a:active {
+  background-color: #aaaae6;
+}
+
+.scenes {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.scenes span {
+  font-size: 2rem;
+  color: #ff2222;
+  background-color: #222222;
+  margin: 0.2rem;
+  padding: 0 0.2rem;
+  white-space: nowrap;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
